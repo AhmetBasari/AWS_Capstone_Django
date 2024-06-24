@@ -8,8 +8,8 @@ pip3 install boto3
 apt  install awscli -y
 cd /home/ubuntu/
 TOKEN=$(aws --region=us-east-1 ssm get-parameter --name /Ahmet/Capstone/token --with-decryption --query 'Parameter.Value' --output text)
-git clone https://$TOKEN@github.com/AhmetBasari/Capstone-Django.git
-cd /home/ubuntu/Capstone-Django
+git clone https://$TOKEN@github.com/AhmetBasari/AWS_Capstone_Django.git
+cd /home/ubuntu/AWS_Capstone_Django
 apt-get install python3.10-dev default-libmysqlclient-dev -y
 pip3 install -r requirements.txt
 cd /home/ubuntu/Capstone-Django/src
